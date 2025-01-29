@@ -47,7 +47,6 @@ WebServer::WebServer( const Address & addr, const std::set<std::string> & server
         config_file_.write( "       quic_max_time_before_crypto_handshake_in_sec 10;\n");
         config_file_.write( "       quic_session_buffer_size 1M;\n");
         config_file_.write( "       quic_max_age 600;\n");
-        config_file_.write( "       quic_parameter_server  http://127.0.0.1;\n");
         config_file_.write( "   }\n" );
     config_file_.write( "}\n" );
     
