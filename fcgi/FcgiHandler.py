@@ -15,4 +15,4 @@ app = ReplayApp()
 # note to myself: this setting is fucking important for interleaved push.
 # any sort of mulitithreading/high concurrency will FUCK UP the push order!
 # Never ever use multithreaded WSGI otherwise custom scheduler wont work
-WSGIServer(app,multiplexed=True,multithreaded=False).run()
+WSGIServer(app,multiplexed=True,multithreaded=False,debug=True).run()
