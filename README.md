@@ -77,6 +77,7 @@ openssl genrsa -aes256 -out /data/CA/private/ca.key.pem 4096
     Verifying - Enter pass phrase for ca.key.pem:SECRET
 chmod 400 /data/CA/private/ca.key.pem
 ```
+It's really important, that Mahimahi has the correct permission to read! and copy!: /data/CA/private/ca.key.pem. 
 Create the root CA config file:
 ```bash
 cd  /data/CA
